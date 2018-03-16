@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      作物
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <form (submit)="doSubmit($event)" [formGroup]="langForm">
+    <ion-list radio-group formControlName="langs">
+
+      <ion-list-header>
+        请选择植物
+      </ion-list-header>
+
+      <div (click)="nextPage()">
+        <p style="text-align:center">玉米</p>
+      </div>
+      <div (click)="nextPage()">
+        <p style="text-align:center">小麦</p>
+      </div>      
+      <div (click)="nextPage()">
+        <p style="text-align:center">番茄</p>
+      </div>      
+      <div (click)="nextPage()">
+        <p style="text-align:center">棉花</p>
+      </div>      
+
+    </ion-list>
+  </form>
+</ion-content>
